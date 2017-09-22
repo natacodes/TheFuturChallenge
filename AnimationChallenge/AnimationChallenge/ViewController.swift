@@ -41,10 +41,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.forgotPassword.alpha = 0
         self.emailTitleLabel.text = "Email"
         self.passwordTitleLabel.text = "Password"
-        self.submitButtonToPasswordTextFieldConstraint.constant = 35
+        self.submitButtonToPasswordTextFieldConstraint.constant = 140
         self.confirmPasswordTitleLabel.isHidden = false
         self.confirmPasswordTitleLabel.alpha = 1
-        self.submitButton.alpha = 0
+//        self.submitButton.alpha = 1
         
         // SIGN IN BUTTON ANIMATIONS
         // Hightlight button
@@ -57,14 +57,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UILabel.animate(withDuration: 0.5, animations: {
             self.confirmPasswordTitleLabel.alpha = 0
             self.confirmPasswordTextField.alpha = 0
+        
         }, completion: {
             (finished: Bool) -> Void in
             self.confirmPasswordTitleLabel.isHidden = true
             self.confirmPasswordTextField.isHidden = true
-            
+            self.submitButtonToPasswordTextFieldConstraint.constant = 30
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
             // SHOW SUBMIT BUTTON
-            UIButton.animate(withDuration: 0.5, animations: {
-                self.submitButton.alpha = 1
+//            UIButton.animate(withDuration: 0.5, animations: {
+//                self.submitButton.alpha = 1
             }, completion: {
                 (finished: Bool) -> Void in
                 UIButton.animate(withDuration: 0.5, animations: {
@@ -85,8 +88,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.confirmPasswordTextField.isHidden = false
         self.emailTitleLabel.text = "Enter your email"
         self.passwordTitleLabel.text = "Choose a password"
-        self.submitButton.alpha = 0
-        self.submitButtonToPasswordTextFieldConstraint.constant = 140
+        self.submitButton.alpha = 1
+        self.submitButtonToPasswordTextFieldConstraint.constant = 30
         
         // SIGN UP BUTTON ANIMATIONS
         // Hightlight button
@@ -95,23 +98,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.signInView.alpha = 0
         })
         
-        // SHOW CONFIRM PASSWORD LABEL
-        UILabel.animate(withDuration: 0.5, animations: {
-            self.confirmPasswordTitleLabel.isHidden = false
-            self.confirmPasswordTitleLabel.alpha = 1
-        }, completion: nil)
-
-        // SHOW CONFIRM PASSWORD TEXT FIELD
-        UITextField.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
-            self.confirmPasswordTextField.isHidden = false
-            self.confirmPasswordTextField.alpha = 1
-        }, completion: {
-            (finished: Bool) -> Void in
-            
-                // SHOW SUBMIT BUTTON
-                UIButton.animate(withDuration: 0.5, animations: {
-                    self.submitButton.alpha = 1
-                }, completion: nil)
+        // MORE SUBMIT BUTTON
+        self.submitButtonToPasswordTextFieldConstraint.constant = 140
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+            }, completion: { (finished: Bool) -> Void in
+                // SHOW CONFIRM PASSWORD LABEL
+                UILabel.animate(withDuration: 0.5, animations: {
+                    self.confirmPasswordTitleLabel.isHidden = false
+                    self.confirmPasswordTitleLabel.alpha = 1
+                }, completion: { (finished: Bool) -> Void in
+                    // SHOW CONFIRM PASSWORD TEXT FIELD
+                    UITextField.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                        self.confirmPasswordTextField.isHidden = false
+                        self.confirmPasswordTextField.alpha = 1
+                    }, completion: nil)
+                })
         })
     }
     
