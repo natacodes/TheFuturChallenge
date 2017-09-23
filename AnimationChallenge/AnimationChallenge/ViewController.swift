@@ -98,7 +98,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.signInView.alpha = 0
         })
         
-        // MORE SUBMIT BUTTON
+        // MOVE SUBMIT BUTTON
         self.submitButtonToPasswordTextFieldConstraint.constant = 140
         UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     self.confirmPasswordTitleLabel.alpha = 1
                 }, completion: { (finished: Bool) -> Void in
                     // SHOW CONFIRM PASSWORD TEXT FIELD
-                    UITextField.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                    UITextField.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
                         self.confirmPasswordTextField.isHidden = false
                         self.confirmPasswordTextField.alpha = 1
                     }, completion: nil)
