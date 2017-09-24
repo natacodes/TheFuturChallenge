@@ -130,6 +130,13 @@
                                     <color key="titleColor" red="0.30588235289999999" green="0.35294117650000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-BL-fir">
+                                <rect key="frame" x="139" y="617" width="97" height="30"/>
+                                <state key="normal" title="Day 3 Buttons"/>
+                                <connections>
+                                    <segue destination="EFU-vR-Yg5" kind="show" animates="NO" id="82z-fX-I4N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -146,10 +153,12 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uFx-dQ-vck" secondAttribute="trailing" constant="20" symbolic="YES" id="LVU-py-Ucu"/>
                             <constraint firstItem="Vk0-4P-miP" firstAttribute="top" secondItem="Rb4-Ny-OcQ" secondAttribute="bottom" constant="20" id="T5O-UF-ila"/>
                             <constraint firstItem="l2w-c1-TbK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TA6-FG-hAE"/>
+                            <constraint firstItem="Xwp-BL-fir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y4T-4Z-tLF"/>
                             <constraint firstItem="l2w-c1-TbK" firstAttribute="top" secondItem="XI5-eP-VI3" secondAttribute="bottom" constant="8" id="ZYo-ir-kr6"/>
                             <constraint firstItem="S3b-2T-xUX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aWR-l5-QGI"/>
                             <constraint firstItem="XI5-eP-VI3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="avf-XT-Pno"/>
                             <constraint firstItem="04W-Uu-xae" firstAttribute="top" secondItem="67f-ra-Mhp" secondAttribute="bottom" constant="8" id="bmU-ac-mTA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xwp-BL-fir" secondAttribute="bottom" constant="20" id="c1K-ah-Wyi"/>
                             <constraint firstItem="bEY-rA-2wz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d5T-Ri-cWD"/>
                             <constraint firstItem="Rb4-Ny-OcQ" firstAttribute="top" secondItem="XI5-eP-VI3" secondAttribute="bottom" constant="40" id="dz1-ep-tyc"/>
                             <constraint firstItem="KXL-Uh-Mzq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="inU-Cp-wUg"/>
@@ -188,9 +197,89 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tO8-XU-axt">
+            <objects>
+                <viewController id="EFU-vR-Yg5" customClass="SecondViewController" customModule="AnimationChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9k9-fj-Pr9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu7-dC-RJd">
+                                <rect key="frame" x="80" y="260" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IRK-j8-JAN"/>
+                                    <constraint firstAttribute="width" constant="215" id="MtC-Or-CEO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Success Button" backgroundImage="day3_button_border">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="successButtonAction:" destination="EFU-vR-Yg5" eventType="touchUpInside" id="sjC-r1-U6R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc9-9B-Sa4">
+                                <rect key="frame" x="80" y="400" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="HEy-2w-bzA"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nmj-cZ-p0r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Failure Button" backgroundImage="day3_button_border">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="failureButtonAction:" destination="EFU-vR-Yg5" eventType="touchUpInside" id="VfN-DS-5fR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-3j-PqM">
+                                <rect key="frame" x="80" y="120" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IBY-jT-g8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Bouncing Button" backgroundImage="day3_button_border">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bouncingButtonAction:" destination="EFU-vR-Yg5" eventType="touchUpInside" id="NgT-pS-xIP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iu7-dC-RJd" firstAttribute="centerX" secondItem="9k9-fj-Pr9" secondAttribute="centerX" id="DkL-sV-8Re"/>
+                            <constraint firstItem="xqF-3j-PqM" firstAttribute="centerX" secondItem="9k9-fj-Pr9" secondAttribute="centerX" id="Ks5-bq-e16"/>
+                            <constraint firstItem="Iu7-dC-RJd" firstAttribute="leading" secondItem="7aX-6q-2mQ" secondAttribute="leading" constant="80" id="LeH-NW-JAu"/>
+                            <constraint firstItem="Mc9-9B-Sa4" firstAttribute="leading" secondItem="7aX-6q-2mQ" secondAttribute="leading" constant="80" id="T7Y-Vh-AGw"/>
+                            <constraint firstItem="Mc9-9B-Sa4" firstAttribute="centerX" secondItem="9k9-fj-Pr9" secondAttribute="centerX" id="XU2-y7-mLd"/>
+                            <constraint firstItem="Mc9-9B-Sa4" firstAttribute="top" secondItem="7aX-6q-2mQ" secondAttribute="top" constant="380" id="g2O-mK-OWg"/>
+                            <constraint firstItem="Iu7-dC-RJd" firstAttribute="top" secondItem="7aX-6q-2mQ" secondAttribute="top" constant="240" id="xqI-31-Xdq"/>
+                            <constraint firstItem="xqF-3j-PqM" firstAttribute="top" secondItem="7aX-6q-2mQ" secondAttribute="top" constant="100" id="zbX-cn-oWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7aX-6q-2mQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="bouncingButton" destination="xqF-3j-PqM" id="zMy-nS-l7U"/>
+                        <outlet property="failureButton" destination="Mc9-9B-Sa4" id="fe6-eQ-Qew"/>
+                        <outlet property="failureButtonCenterX" destination="XU2-y7-mLd" id="l44-Tt-PKm"/>
+                        <outlet property="failureButtonLeading" destination="T7Y-Vh-AGw" id="7tX-b3-kvB"/>
+                        <outlet property="failureButtonWidth" destination="HEy-2w-bzA" id="ZSc-Du-8v5"/>
+                        <outlet property="successButton" destination="Iu7-dC-RJd" id="fWX-80-yCt"/>
+                        <outlet property="successButtonCenterX" destination="DkL-sV-8Re" id="xo9-qw-y6V"/>
+                        <outlet property="successButtonLeading" destination="LeH-NW-JAu" id="PLP-9f-N2h"/>
+                        <outlet property="successButtonWidth" destination="MtC-Or-CEO" id="doF-GB-mH6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18S-TC-Fr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="34"/>
+        </scene>
     </scenes>
     <resources>
         <image name="day1-button_border" width="215" height="60"/>
         <image name="day1-text_block_background" width="375" height="70"/>
+        <image name="day3_button_border" width="215" height="60"/>
     </resources>
 </document>

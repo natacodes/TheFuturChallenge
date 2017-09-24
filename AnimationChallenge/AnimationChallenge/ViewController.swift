@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.submitButtonToPasswordTextFieldConstraint.constant = 140
         self.confirmPasswordTitleLabel.isHidden = false
         self.confirmPasswordTitleLabel.alpha = 1
-//        self.submitButton.alpha = 1
         
         // SIGN IN BUTTON ANIMATIONS
         // Hightlight button
