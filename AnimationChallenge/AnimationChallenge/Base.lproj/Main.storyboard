@@ -88,9 +88,45 @@
                     <view key="view" contentMode="scaleToFill" id="N34-LS-PXJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-Gk-Trb">
+                                <rect key="frame" x="107.5" y="164" width="160" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Jgb-jb-Um6"/>
+                                    <constraint firstAttribute="width" constant="160" id="W5x-7V-izQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusButtonAction:" destination="0Xz-SE-bgm" eventType="touchUpInside" id="BkQ-jJ-Omi"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day4-done" translatesAutoresizingMaskIntoConstraints="NO" id="Qq6-v2-OBQ">
+                                <rect key="frame" x="157" y="164" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wM6-8q-fQ9"/>
+                                    <constraint firstAttribute="width" constant="60" id="zON-cD-lIO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IQU-Gk-Trb" firstAttribute="centerX" secondItem="N34-LS-PXJ" secondAttribute="centerX" id="AuS-UN-T4w"/>
+                            <constraint firstItem="Qq6-v2-OBQ" firstAttribute="centerY" secondItem="IQU-Gk-Trb" secondAttribute="centerY" id="I3D-ig-qvw"/>
+                            <constraint firstItem="IQU-Gk-Trb" firstAttribute="top" secondItem="eOG-2A-mu3" secondAttribute="top" constant="100" id="nHJ-sb-cYw"/>
+                            <constraint firstItem="Qq6-v2-OBQ" firstAttribute="centerX" secondItem="IQU-Gk-Trb" secondAttribute="centerX" id="zoq-Lc-BE7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eOG-2A-mu3"/>
                     </view>
+                    <connections>
+                        <outlet property="doneImg" destination="Qq6-v2-OBQ" id="xeQ-l5-321"/>
+                        <outlet property="plusButton" destination="IQU-Gk-Trb" id="jbO-h4-znK"/>
+                        <outlet property="plusButtonHeight" destination="Jgb-jb-Um6" id="dAo-YZ-uhq"/>
+                        <outlet property="plusButtonWidth" destination="W5x-7V-izQ" id="iDO-Pr-3kO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brl-mX-xbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,5 +381,6 @@
         <image name="day1-button_border" width="215" height="60"/>
         <image name="day1-text_block_background" width="375" height="70"/>
         <image name="day3_button_border" width="215" height="60"/>
+        <image name="day4-done" width="60" height="60"/>
     </resources>
 </document>

@@ -15,3 +15,7 @@ Example: https://twitter.com/natacodes/status/911433118686470144
 * Using CABasicAnimation
 * Animations using managing layers  
 Example: https://twitter.com/natacodes/status/911795004909150208
+
+## Day 4
+* Using CAKeyframeAnimation 
+Example: https://twitter.com/natacodes/status/912947865516859392
