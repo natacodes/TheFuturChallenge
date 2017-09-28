@@ -15,6 +15,7 @@
 		41D967241F737F3400B4659D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D967221F737F3400B4659D /* Main.storyboard */; };
 		41D967261F737F3400B4659D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D967251F737F3400B4659D /* Assets.xcassets */; };
 		41D967291F737F3400B4659D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D967271F737F3400B4659D /* LaunchScreen.storyboard */; };
+		41FFF8EB1F7CA8E70058CF2E /* Day5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFF8EA1F7CA8E70058CF2E /* Day5ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		41D967251F737F3400B4659D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D967281F737F3400B4659D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41D9672A1F737F3400B4659D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FFF8EA1F7CA8E70058CF2E /* Day5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				41D967201F737F3400B4659D /* ViewController.swift */,
 				4179120B1F76F7F800CCB865 /* SecondViewController.swift */,
 				418AC6651F79CF1600C4A7A8 /* Day4ViewController.swift */,
+				41FFF8EA1F7CA8E70058CF2E /* Day5ViewController.swift */,
 				41D967221F737F3400B4659D /* Main.storyboard */,
 				41D967251F737F3400B4659D /* Assets.xcassets */,
 				41D967271F737F3400B4659D /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				41D9671F1F737F3400B4659D /* AppDelegate.swift in Sources */,
 				418AC6661F79CF1600C4A7A8 /* Day4ViewController.swift in Sources */,
 				41A2D2CA1F79CCF4009D1BEF /* FirstViewController.swift in Sources */,
+				41FFF8EB1F7CA8E70058CF2E /* Day5ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
