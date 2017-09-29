@@ -54,3 +54,7 @@ An app using Core Animation has three sets of layer objects. Each set of layer o
 ## Day 5
 * More practice with rotations  
 [Example](https://twitter.com/natacodes/status/913292684428587008)
+
+## Day 6  
+* Animation for a list of items  
+[Example](https://twitter.com/natacodes/status/913648060302888960)

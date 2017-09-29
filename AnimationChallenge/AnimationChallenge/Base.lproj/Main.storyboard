@@ -71,16 +71,26 @@
                                     <segue destination="7xx-MI-VKz" kind="show" id="6Mx-TM-Z8I"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4G-St-vhm">
+                                <rect key="frame" x="163" y="316" width="50" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Day 6"/>
+                                <connections>
+                                    <segue destination="BOZ-EE-Nkj" kind="show" id="aFm-W9-58s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mol-MF-kIX" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="47U-ai-z9P"/>
+                            <constraint firstItem="q4G-St-vhm" firstAttribute="top" secondItem="QtQ-QP-qeA" secondAttribute="bottom" constant="22" id="8Bz-bu-dFp"/>
                             <constraint firstItem="maz-PD-Aen" firstAttribute="top" secondItem="Mol-MF-kIX" secondAttribute="bottom" constant="20" id="EIR-MG-v5X"/>
                             <constraint firstItem="QtQ-QP-qeA" firstAttribute="top" secondItem="maz-PD-Aen" secondAttribute="bottom" constant="20" id="KYV-LX-iHx"/>
                             <constraint firstItem="Mol-MF-kIX" firstAttribute="top" secondItem="f2g-Fj-lVN" secondAttribute="bottom" constant="20" id="S8p-M0-AzR"/>
                             <constraint firstItem="QtQ-QP-qeA" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="V8p-hv-xYC"/>
                             <constraint firstItem="maz-PD-Aen" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="cKt-p9-WaF"/>
                             <constraint firstItem="f2g-Fj-lVN" firstAttribute="top" secondItem="5GS-nZ-cWg" secondAttribute="top" constant="30" id="mC4-Sq-MPK"/>
+                            <constraint firstItem="q4G-St-vhm" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="yjE-M0-NsM"/>
                             <constraint firstItem="f2g-Fj-lVN" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="zrC-8f-Qe5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5GS-nZ-cWg"/>
@@ -171,7 +181,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuL-F1-DnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="33.733133433283363"/>
+            <point key="canvasLocation" x="1670" y="-717"/>
+        </scene>
+        <!--Day 6-->
+        <scene sceneID="JM5-Ub-8PB">
+            <objects>
+                <viewController title="Day 6" id="BOZ-EE-Nkj" customClass="Day6ViewController" customModule="AnimationChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tIs-r0-dSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA1-WF-U1O" userLabel="Top Button">
+                                <rect key="frame" x="80" y="327" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="Abe-Oj-eJH"/>
+                                    <constraint firstAttribute="height" constant="60" id="g3R-gh-hIM"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="day6_boxbackground"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kK-hR-mJj">
+                                <rect key="frame" x="80" y="417" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gCw-Qf-lWt"/>
+                                    <constraint firstAttribute="width" constant="215" id="xp4-Ak-CaO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="day6_boxbackground"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9o-tt-D1A">
+                                <rect key="frame" x="80" y="507" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="elg-TY-UWC"/>
+                                    <constraint firstAttribute="width" constant="215" id="w1b-8f-Dnz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="day6_boxbackground"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irN-F9-arb" userLabel="Trigger Button">
+                                <rect key="frame" x="157" y="507" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="PxI-Tg-hdB"/>
+                                    <constraint firstAttribute="height" constant="60" id="yXa-e4-knf"/>
+                                </constraints>
+                                <state key="normal" image="plus" backgroundImage="day6_button1"/>
+                                <connections>
+                                    <action selector="triggerButtonAction:" destination="BOZ-EE-Nkj" eventType="touchUpInside" id="CCE-5G-dbe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="E9o-tt-D1A" secondAttribute="bottom" constant="100" id="2XO-S4-bta"/>
+                            <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="TA1-WF-U1O" secondAttribute="bottom" constant="280" id="Ggy-aN-hqf"/>
+                            <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="irN-F9-arb" secondAttribute="bottom" constant="100" id="Gyy-ve-jP8"/>
+                            <constraint firstItem="irN-F9-arb" firstAttribute="centerX" secondItem="tIs-r0-dSQ" secondAttribute="centerX" id="WHa-3o-bf6"/>
+                            <constraint firstItem="TA1-WF-U1O" firstAttribute="centerX" secondItem="tIs-r0-dSQ" secondAttribute="centerX" id="aFy-d2-WRe"/>
+                            <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="5kK-hR-mJj" secondAttribute="bottom" constant="190" id="b9q-x5-zvM"/>
+                            <constraint firstItem="E9o-tt-D1A" firstAttribute="centerX" secondItem="tIs-r0-dSQ" secondAttribute="centerX" id="dWo-ki-Unp"/>
+                            <constraint firstItem="5kK-hR-mJj" firstAttribute="centerX" secondItem="tIs-r0-dSQ" secondAttribute="centerX" id="pMi-Pp-BaA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eAq-Lb-Um2"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBConstrain" destination="2XO-S4-bta" id="ZPd-rt-cLE"/>
+                        <outlet property="bottomBWidth" destination="w1b-8f-Dnz" id="zgX-ox-Gid"/>
+                        <outlet property="bottomButton" destination="E9o-tt-D1A" id="u8f-HX-Fry"/>
+                        <outlet property="middleBConstrain" destination="b9q-x5-zvM" id="ESy-hX-59E"/>
+                        <outlet property="middleButton" destination="5kK-hR-mJj" id="LTU-IH-8i6"/>
+                        <outlet property="topBConstrain" destination="Ggy-aN-hqf" id="V7j-Zu-Qgc"/>
+                        <outlet property="topButton" destination="TA1-WF-U1O" id="UCJ-y7-OWx"/>
+                        <outlet property="triggerButton" destination="irN-F9-arb" id="RXv-3g-xX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJt-VW-eGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="34"/>
         </scene>
         <!--Day 4-->
         <scene sceneID="3Kh-vH-xoL">
@@ -475,5 +557,8 @@
         <image name="day3_button_border" width="215" height="60"/>
         <image name="day4-done" width="60" height="60"/>
         <image name="day5_background_view1" width="65" height="65"/>
+        <image name="day6_boxbackground" width="215" height="60"/>
+        <image name="day6_button1" width="60" height="60"/>
+        <image name="plus" width="38" height="38"/>
     </resources>
 </document>
