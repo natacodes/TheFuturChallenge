@@ -27,16 +27,16 @@ Core Animation uses **action objects** to implement the default set of animation
 **Properties:** *anchor point* is one of several properties that you specify using the unit coordinate system.
 
 ## Day 2
-* Animating objects  using Auto Layout constraints   
+* Animating objects  using Auto Layout constraints  
 [Example](https://twitter.com/natacodes/status/911433118686470144)
 
 ### Notes:
-[**Layers Can Be Manipulated in Three Dimensions**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html#//apple_ref/doc/uid/TP40004514-CH2-SW18)
+[**Layers Can Be Manipulated in Three Dimensions**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html#//apple_ref/doc/uid/TP40004514-CH2-SW18)  
 The *transform* property of CALayer specifies the transforms that you want to apply both to the layer and its embedded sublayers. The *sublayerTransform* property defines additional transformations that apply only to the sublayers.
 
 In Core Animation, the transform in the figure is represented by the *CATransform3D* type.
 
-[**Layer Trees Reflect Different Aspects of the Animation State**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html#//apple_ref/doc/uid/TP40004514-CH2-SW19)
+[**Layer Trees Reflect Different Aspects of the Animation State**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html#//apple_ref/doc/uid/TP40004514-CH2-SW19)  
 An app using Core Animation has three sets of layer objects. Each set of layer objects has a different role in making the content of your app appear onscreen:
 * Objects in the *model layer tree* are the model objects that store the target values for any animations. Whenever you change the property of a layer, you use one of these objects.
 * Objects in the *presentation tree* contain the in-flight values for any running animations. The objects in the presentation tree reflect the current values as they appear onscreen.
