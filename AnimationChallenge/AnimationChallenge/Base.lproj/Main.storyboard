@@ -79,6 +79,14 @@
                                     <segue destination="BOZ-EE-Nkj" kind="show" id="aFm-W9-58s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-uk-ibX">
+                                <rect key="frame" x="163" y="371" width="49" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Day 7"/>
+                                <connections>
+                                    <segue destination="rkC-qy-Rc9" kind="show" id="vDu-Q4-3sv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -90,6 +98,8 @@
                             <constraint firstItem="QtQ-QP-qeA" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="V8p-hv-xYC"/>
                             <constraint firstItem="maz-PD-Aen" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="cKt-p9-WaF"/>
                             <constraint firstItem="f2g-Fj-lVN" firstAttribute="top" secondItem="5GS-nZ-cWg" secondAttribute="top" constant="30" id="mC4-Sq-MPK"/>
+                            <constraint firstItem="0lc-uk-ibX" firstAttribute="top" secondItem="q4G-St-vhm" secondAttribute="bottom" constant="20" id="pOr-9c-bg2"/>
+                            <constraint firstItem="0lc-uk-ibX" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="u0o-1k-7lR"/>
                             <constraint firstItem="q4G-St-vhm" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="yjE-M0-NsM"/>
                             <constraint firstItem="f2g-Fj-lVN" firstAttribute="centerX" secondItem="LOa-a3-1wt" secondAttribute="centerX" id="zrC-8f-Qe5"/>
                         </constraints>
@@ -100,6 +110,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhJ-Ii-hxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-844" y="33.733133433283363"/>
+        </scene>
+        <!--Day 7-->
+        <scene sceneID="PPT-KJ-InP">
+            <objects>
+                <viewController title="Day 7" id="rkC-qy-Rc9" customClass="Day7ViewController" customModule="AnimationChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TSq-Ua-B24">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAO-1d-nUZ">
+                                <rect key="frame" x="37.5" y="154" width="80" height="3"/>
+                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="XTb-JO-Wu2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-Ed-njJ">
+                                <rect key="frame" x="37.5" y="114" width="80" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="zSk-Ou-pM8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Breakfast">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1Action:" destination="rkC-qy-Rc9" eventType="touchUpInside" id="hRA-Tz-70t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQP-Lo-O9a">
+                                <rect key="frame" x="147.5" y="114" width="80" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kEO-Jd-4yv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lunch">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Action:" destination="rkC-qy-Rc9" eventType="touchUpInside" id="a3G-SP-MpG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuH-Aj-0BP">
+                                <rect key="frame" x="257.5" y="114" width="80" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RWC-uQ-SS3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dinner">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3Action:" destination="rkC-qy-Rc9" eventType="touchUpInside" id="o25-32-xu9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jQP-Lo-O9a" firstAttribute="centerX" secondItem="TSq-Ua-B24" secondAttribute="centerX" id="0n9-Y3-aXW"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="trailing" secondItem="dwo-Ed-njJ" secondAttribute="trailing" id="AAe-fw-Db7"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="trailing" secondItem="YuH-Aj-0BP" secondAttribute="trailing" id="Ev0-0h-5jn"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="top" secondItem="CWv-zv-28b" secondAttribute="top" constant="90" id="Gd3-Wx-xXZ"/>
+                            <constraint firstItem="jQP-Lo-O9a" firstAttribute="leading" secondItem="dwo-Ed-njJ" secondAttribute="trailing" constant="30" id="Mez-fu-68j"/>
+                            <constraint firstItem="YuH-Aj-0BP" firstAttribute="leading" secondItem="jQP-Lo-O9a" secondAttribute="trailing" constant="30" id="QYW-3A-VSr"/>
+                            <constraint firstItem="YuH-Aj-0BP" firstAttribute="centerY" secondItem="jQP-Lo-O9a" secondAttribute="centerY" id="SHm-P3-N8E"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="trailing" secondItem="jQP-Lo-O9a" secondAttribute="trailing" id="UpY-vg-fMT"/>
+                            <constraint firstItem="dwo-Ed-njJ" firstAttribute="centerY" secondItem="jQP-Lo-O9a" secondAttribute="centerY" id="aEE-WX-dc9"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="leading" secondItem="jQP-Lo-O9a" secondAttribute="leading" id="aHU-T2-7zK"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="leading" secondItem="dwo-Ed-njJ" secondAttribute="leading" id="jSv-8H-Lh2"/>
+                            <constraint firstItem="jQP-Lo-O9a" firstAttribute="top" secondItem="CWv-zv-28b" secondAttribute="top" constant="50" id="tXi-z1-guM"/>
+                            <constraint firstItem="GAO-1d-nUZ" firstAttribute="leading" secondItem="YuH-Aj-0BP" secondAttribute="leading" id="vSH-ho-Rfz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CWv-zv-28b"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ev0-0h-5jn"/>
+                                <exclude reference="UpY-vg-fMT"/>
+                                <exclude reference="aHU-T2-7zK"/>
+                                <exclude reference="vSH-ho-Rfz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="dwo-Ed-njJ" id="ctX-Zo-5wc"/>
+                        <outlet property="button1Width" destination="zSk-Ou-pM8" id="Gkw-gH-mhP"/>
+                        <outlet property="button2" destination="jQP-Lo-O9a" id="iWR-Q7-nsK"/>
+                        <outlet property="button2Wifth" destination="kEO-Jd-4yv" id="Gzw-Ur-orb"/>
+                        <outlet property="button3" destination="YuH-Aj-0BP" id="jQp-0O-8eR"/>
+                        <outlet property="button3Width" destination="RWC-uQ-SS3" id="dIn-nB-CKo"/>
+                        <outlet property="lineView" destination="GAO-1d-nUZ" id="07f-VP-V2v"/>
+                        <outlet property="lineViewLeadingButton1" destination="jSv-8H-Lh2" id="NuP-Yb-lRO"/>
+                        <outlet property="lineViewLeadingButton2" destination="aHU-T2-7zK" id="hRr-Bb-kiZ"/>
+                        <outlet property="lineViewLeadingButton3" destination="vSH-ho-Rfz" id="vWX-7m-Ckv"/>
+                        <outlet property="lineViewTrailingButton1" destination="AAe-fw-Db7" id="rD3-IY-xlm"/>
+                        <outlet property="lineViewTrailingButton2" destination="UpY-vg-fMT" id="s49-Ee-Wm3"/>
+                        <outlet property="lineViewTrailingButton3" destination="Ev0-0h-5jn" id="Nzh-m3-yhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiJ-vF-X3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="34"/>
         </scene>
         <!--Day 5-->
         <scene sceneID="Kpg-gS-q4V">
@@ -253,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJt-VW-eGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="34"/>
+            <point key="canvasLocation" x="2510" y="-717"/>
         </scene>
         <!--Day 4-->
         <scene sceneID="3Kh-vH-xoL">

@@ -11,6 +11,7 @@
 		4179120C1F76F7F800CCB865 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179120B1F76F7F800CCB865 /* SecondViewController.swift */; };
 		418AC6661F79CF1600C4A7A8 /* Day4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AC6651F79CF1600C4A7A8 /* Day4ViewController.swift */; };
 		41A2D2CA1F79CCF4009D1BEF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2D2C91F79CCF4009D1BEF /* FirstViewController.swift */; };
+		41B274BC1F7EF24900656803 /* Day7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B274BB1F7EF24900656803 /* Day7ViewController.swift */; };
 		41D9671F1F737F3400B4659D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9671E1F737F3400B4659D /* AppDelegate.swift */; };
 		41D967211F737F3400B4659D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D967201F737F3400B4659D /* ViewController.swift */; };
 		41D967241F737F3400B4659D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D967221F737F3400B4659D /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		4179120B1F76F7F800CCB865 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		418AC6651F79CF1600C4A7A8 /* Day4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4ViewController.swift; sourceTree = "<group>"; };
 		41A2D2C91F79CCF4009D1BEF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		41B274BB1F7EF24900656803 /* Day7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7ViewController.swift; sourceTree = "<group>"; };
 		41D9671B1F737F3400B4659D /* AnimationChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D9671E1F737F3400B4659D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D967201F737F3400B4659D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				418AC6651F79CF1600C4A7A8 /* Day4ViewController.swift */,
 				41FFF8EA1F7CA8E70058CF2E /* Day5ViewController.swift */,
 				411A6D061F7DFD3A002B62BA /* Day6ViewController.swift */,
+				41B274BB1F7EF24900656803 /* Day7ViewController.swift */,
 				41D967221F737F3400B4659D /* Main.storyboard */,
 				41D967251F737F3400B4659D /* Assets.xcassets */,
 				41D967271F737F3400B4659D /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				41A2D2CA1F79CCF4009D1BEF /* FirstViewController.swift in Sources */,
 				411A6D071F7DFD3A002B62BA /* Day6ViewController.swift in Sources */,
 				41FFF8EB1F7CA8E70058CF2E /* Day5ViewController.swift in Sources */,
+				41B274BC1F7EF24900656803 /* Day7ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
