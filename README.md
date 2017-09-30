@@ -60,6 +60,7 @@ An app using Core Animation has three sets of layer objects. Each set of layer o
 [Example](https://twitter.com/natacodes/status/913648060302888960)
 
 ## Day 7  
-* Animated switcher
+* Animated switcher  
+[Example](https://twitter.com/natacodes/status/914033298912899073)
  
 
