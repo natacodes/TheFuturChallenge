@@ -67,5 +67,9 @@ An app using Core Animation has three sets of layer objects. Each set of layer o
 * Adding new items in a list  
 [Example](https://twitter.com/natacodes/status/914312099047731200)
 
+## Day 9  
+* Animation for switcher  
+[Example](https://twitter.com/natacodes/status/916491673680490497)
+
  
 
