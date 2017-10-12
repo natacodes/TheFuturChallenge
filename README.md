@@ -47,6 +47,32 @@ An app using Core Animation has three sets of layer objects. Each set of layer o
 * Animations using managing layers  
 [Example](https://twitter.com/natacodes/status/911795004909150208)
 
+### Notes:
+[**Enabling Core Animation Support in Your App**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/SettingUpLayerObjects/SettingUpLayerObjects.html#//apple_ref/doc/uid/TP40004514-CH13-SW5)  
+In iOS apps, Core Animation is always enabled and every view is backed by a layer. In OS X, apps must explicitly enable Core Animation support by doing the following:   
+* Link against the QuartzCore framework. (iOS apps must link against this framework only if they use Core Animation interfaces explicitly.)
+* Enable layer support for one or more of your NSView objects by doing one of the following:
+  * In your nib files, use the View Effects inspector to enable layer support for your views. The inspector displays checkboxes for the selected view and its subviews. It is recommended that you enable layer support in the content view of your window whenever possible.
+  * For views you create programmatically, call the view’s setWantsLayer: method and pass a value of YES to indicate that the view should use layers.
+  
+Most iOS views create a CALayer object and use that layer as the backing store for its content. For most of your own views, this default choice is a good one and you should not need to change it. But you might find that a different layer class is more appropriate in certain situations. For example, you might want to change the layer class in the following situations:
+* Your view draws content using Metal or OpenGL ES, in which case you would use a CAMetalLayer or CAEAGLLayer object.
+* There is a specialized layer class that offers better performance.
+* You want to take advantage of some specialized Core Animation layer classes, such as particle emitters or replicators.
+
+[CALayer subclasses and their uses](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/SettingUpLayerObjects/SettingUpLayerObjects.html#//apple_ref/doc/uid/TP40004514-CH13-SW25)
+
+**Layers Have Their Own Background and Border**  
+A layer can display a filled background and a stroked border in addition to its image-based contents. The background color is rendered behind the layer’s contents image and the border is rendered on top of that image.  If the layer contains sublayers, they also appear underneath the border. Because the background color sits behind your image, that color shines through any transparent portions of your image.
+
+```swift
+myLayer.backgroundColor = [NSColor greenColor].CGColor;
+myLayer.borderColor = [NSColor blackColor].CGColor;
+myLayer.borderWidth = 3.0;
+```
+**Layers Support a Corner Radius**   
+[cornerRadius](https://developer.apple.com/documentation/quartzcore/calayer/1410818-cornerradius)
+
 ## Day 4
 * Using CAKeyframeAnimation  
 [Example](https://twitter.com/natacodes/status/912947865516859392)
