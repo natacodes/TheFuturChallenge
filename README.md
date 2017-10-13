@@ -97,5 +97,9 @@ myLayer.borderWidth = 3.0;
 * Animation for switcher  
 [Example](https://twitter.com/natacodes/status/916491673680490497)
 
+## Day 10  
+* Delete item  
+[Example](https://twitter.com/natacodes/status/918634908309905408)
+
  
 
