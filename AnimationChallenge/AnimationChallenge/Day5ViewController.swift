@@ -29,8 +29,8 @@ class Day5ViewController: UIViewController {
         UIView.animate(withDuration: 0.5, animations: {
             self.line1.transform = CGAffineTransform(rotationAngle: (40.0 * CGFloat(Double.pi)) / 180.0)
             self.line2.transform = CGAffineTransform(rotationAngle: (-(140.0 * CGFloat(Double.pi)) / 180.0))
-            self.line1.backgroundColor = UIColor.green
-            self.line2.backgroundColor = UIColor.green
+            self.line1.backgroundColor = UIColor(red:0.53, green:0.72, blue:0.42, alpha:1.0)
+            self.line2.backgroundColor = UIColor(red:0.53, green:0.72, blue:0.42, alpha:1.0)
         })
         self.line1Height.constant = 35
         self.line2Width.constant = 17
