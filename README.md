@@ -75,11 +75,37 @@ myLayer.borderWidth = 3.0;
 
 ## Day 4
 * Using CAKeyframeAnimation  
-[Example](https://twitter.com/natacodes/status/912947865516859392)
+[Example](https://twitter.com/natacodes/status/912947865516859392)   
+
+**Animating a change implicitly:**
+```swift
+theLayer.opacity = 0.0
+```
+**Animating a change explicitly:**
+```swift
+let colorKeyframeAnimation = CAKeyframeAnimation(keyPath: "backgroundColor")
+colorKeyframeAnimation.values = [UIColor.black.cgColor, UIColor.blue.cgColor]
+colorKeyframeAnimation.keyTimes = [0, 1]
+colorKeyframeAnimation.duration = 1
+colorKeyframeAnimation.autoreverses = false
+self.plusButton.backgroundColor = UIColor.blue
+
+// Set animations
+self.plusButton.layer.add(rotateAnimation, forKey: nil)
+self.plusButton.layer.add(colorKeyframeAnimation, forKey: "color")
+
+// Change the actual data value in the layer to the final value.
+self.plusButton.backgroundColor = UIColor.blue
+```
+
+Unlike an implicit animation, which updates the layer object’s data value, an explicit animation does not modify the data in the layer tree. Explicit animations only produce the animations. At the end of the animation, Core Animation removes the animation object from the layer and redraws the layer using its current data values. If you want the changes from an explicit animation to be permanent, you must also update the layer’s property as shown in the preceding example.
 
 ## Day 5
 * More practice with rotations  
-[Example](https://twitter.com/natacodes/status/913292684428587008)
+[Example](https://twitter.com/natacodes/status/913292684428587008)   
+
+[**Using a Keyframe Animation to Change Layer Properties**](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CreatingBasicAnimations/CreatingBasicAnimations.html#//apple_ref/doc/uid/TP40004514-CH3-SW8)
+A key frame animation consists of a set of target data values and the times at which each value should be reached. In the simplest configuration, you specify both the values and times using an array. For changes to a layer’s position, you can also have the changes follow a path. The animation object takes the key frames you specify and builds the animation by interpolating from one value to the next over the given time periods.
 
 ## Day 6  
 * Animation for a list of items  
