@@ -1,5 +1,5 @@
 # TheFuturChallenge
-30 day of learning iOS Core Animation
+10 day of learning iOS Core Animation
 
 ## Day 1
 * Animation with duration
