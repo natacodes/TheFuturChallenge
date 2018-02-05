@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="icv-l0-4vq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="icv-l0-4vq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,79 +40,115 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="a86-de-lCI">
-                                <rect key="frame" x="154" y="128" width="67" height="475"/>
+                                <rect key="frame" x="127.5" y="105.5" width="120" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xUv-M5-HPQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="475"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="520"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Fj-lVN">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="I0C-WI-6mT"/>
+                                                    <constraint firstAttribute="width" constant="120" id="zwr-pc-OX1"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 1, 2"/>
+                                                <state key="normal" title="Login Page"/>
                                                 <connections>
                                                     <segue destination="BYZ-38-t0r" kind="show" id="ur5-MH-Xcq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-MF-kIX">
-                                                <rect key="frame" x="0.0" y="55" width="50" height="35"/>
+                                                <rect key="frame" x="0.0" y="60" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="deE-Ci-iId"/>
+                                                    <constraint firstAttribute="width" constant="120" id="seu-PS-zhC"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 3"/>
+                                                <state key="normal" title="Buttons"/>
                                                 <connections>
                                                     <segue destination="EFU-vR-Yg5" kind="show" id="HmJ-OM-nJW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maz-PD-Aen">
-                                                <rect key="frame" x="0.0" y="110" width="50" height="35"/>
+                                                <rect key="frame" x="0.0" y="120" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="V7F-Be-cnI"/>
+                                                    <constraint firstAttribute="width" constant="120" id="tkc-Al-efc"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 4"/>
+                                                <state key="normal" title="Start"/>
                                                 <connections>
                                                     <segue destination="0Xz-SE-bgm" kind="show" id="DTN-M8-VvH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-QP-qeA">
-                                                <rect key="frame" x="0.0" y="165" width="49" height="35"/>
+                                                <rect key="frame" x="0.0" y="180" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="0UY-Hh-TmF"/>
+                                                    <constraint firstAttribute="height" constant="40" id="aj9-Sn-8JP"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 5"/>
+                                                <state key="normal" title="Done"/>
                                                 <connections>
                                                     <segue destination="7xx-MI-VKz" kind="show" id="6Mx-TM-Z8I"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4G-St-vhm">
-                                                <rect key="frame" x="0.0" y="220" width="50" height="35"/>
+                                                <rect key="frame" x="0.0" y="240" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="IsX-4q-wZ4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="aMz-Bg-SnT"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 6"/>
+                                                <state key="normal" title="Add"/>
                                                 <connections>
                                                     <segue destination="BOZ-EE-Nkj" kind="show" id="aFm-W9-58s"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-uk-ibX">
-                                                <rect key="frame" x="0.0" y="275" width="49" height="35"/>
+                                                <rect key="frame" x="0.0" y="300" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="J8z-rR-aam"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tAI-Re-CDK"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 7"/>
+                                                <state key="normal" title="Chose"/>
                                                 <connections>
                                                     <segue destination="rkC-qy-Rc9" kind="show" id="vDu-Q4-3sv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tq-CJ-rt3">
-                                                <rect key="frame" x="0.0" y="330" width="50" height="35"/>
+                                                <rect key="frame" x="0.0" y="360" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="AuG-wy-shl"/>
+                                                    <constraint firstAttribute="width" constant="120" id="g1b-Y2-U8i"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 8"/>
+                                                <state key="normal" title="New item"/>
                                                 <connections>
                                                     <segue destination="kUt-Jd-Vm6" kind="show" id="wvQ-VG-Noe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vix-Vg-bJg">
-                                                <rect key="frame" x="0.0" y="385" width="50" height="35"/>
+                                                <rect key="frame" x="0.0" y="420" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="T81-sr-5zi"/>
+                                                    <constraint firstAttribute="height" constant="40" id="yZB-g5-ahh"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 9"/>
+                                                <state key="normal" title="Switch"/>
                                                 <connections>
                                                     <segue destination="0wY-fX-Hyd" kind="show" id="cWo-xe-z1R"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AST-7Y-Ohe">
-                                                <rect key="frame" x="0.0" y="440" width="58" height="35"/>
+                                                <rect key="frame" x="0.0" y="480" width="120" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="ENV-XO-Nie"/>
+                                                    <constraint firstAttribute="height" constant="40" id="igx-5e-9HN"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Day 10"/>
+                                                <state key="normal" title="Remove"/>
                                                 <connections>
                                                     <segue destination="VOF-lr-oon" kind="show" id="bOE-JJ-EbF"/>
                                                 </connections>
@@ -265,12 +301,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nPh-u1-R1h" firstAttribute="height" secondItem="YJq-Rg-7SU" secondAttribute="height" id="2Rs-UG-jFa"/>
+                            <constraint firstItem="nPh-u1-R1h" firstAttribute="trailing" secondItem="YJq-Rg-7SU" secondAttribute="trailing" id="74H-Uo-NVn"/>
                             <constraint firstItem="YJq-Rg-7SU" firstAttribute="centerY" secondItem="3zW-4A-2kp" secondAttribute="centerY" id="QYp-wN-4jt"/>
-                            <constraint firstItem="nPh-u1-R1h" firstAttribute="centerX" secondItem="YJq-Rg-7SU" secondAttribute="centerX" id="UzD-Ap-zRN"/>
-                            <constraint firstItem="nPh-u1-R1h" firstAttribute="centerY" secondItem="YJq-Rg-7SU" secondAttribute="centerY" id="kRl-6T-TwI"/>
+                            <constraint firstItem="nPh-u1-R1h" firstAttribute="top" secondItem="YJq-Rg-7SU" secondAttribute="top" id="SgP-yH-KSP"/>
+                            <constraint firstItem="nPh-u1-R1h" firstAttribute="bottom" secondItem="YJq-Rg-7SU" secondAttribute="bottom" id="c3p-Ml-DZW"/>
                             <constraint firstItem="YJq-Rg-7SU" firstAttribute="centerX" secondItem="3zW-4A-2kp" secondAttribute="centerX" id="mfR-E6-inm"/>
-                            <constraint firstItem="nPh-u1-R1h" firstAttribute="width" secondItem="YJq-Rg-7SU" secondAttribute="width" id="yLZ-3H-uHv"/>
+                            <constraint firstItem="nPh-u1-R1h" firstAttribute="leading" secondItem="YJq-Rg-7SU" secondAttribute="leading" id="nCx-Tl-9tc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bq5-ys-CmB"/>
                     </view>
@@ -618,7 +654,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="E9o-tt-D1A" secondAttribute="bottom" constant="100" id="2XO-S4-bta"/>
                             <constraint firstItem="eAq-Lb-Um2" firstAttribute="bottom" secondItem="TA1-WF-U1O" secondAttribute="bottom" constant="280" id="Ggy-aN-hqf"/>
@@ -941,31 +977,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18S-TC-Fr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="-717"/>
-        </scene>
-        <!--Day 11-->
-        <scene sceneID="j6u-gK-bu4">
-            <objects>
-                <viewController title="Day 11" id="PiJ-La-afa" customClass="Day11ViewController" customModule="AnimationChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oCy-Lm-Uzb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhn-Gc-RY2">
-                                <rect key="frame" x="67" y="330" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="d5Y-Io-YOf"/>
-                    </view>
-                    <connections>
-                        <outlet property="animatedView" destination="bhn-Gc-RY2" id="HpW-zZ-d3v"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ji3-jj-fcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1751" y="136"/>
         </scene>
     </scenes>
     <resources>
